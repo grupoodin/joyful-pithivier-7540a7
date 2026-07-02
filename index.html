@@ -149,8 +149,42 @@ a{text-decoration:none;color:inherit}
 
 @media(max-width:1024px){.card-grid-3{grid-template-columns:1fr}.steps-grid{grid-template-columns:1fr 1fr}.footer-top{grid-template-columns:1fr 1fr}.diff-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:768px){.nav-links,.nav-cta{display:none}.hamburger{display:flex}.card-grid-2{grid-template-columns:1fr}.diff-grid{grid-template-columns:1fr}.steps-grid{grid-template-columns:1fr}.form-row{grid-template-columns:1fr}.footer-top{grid-template-columns:1fr}.footer-bottom{flex-direction:column;text-align:center}}
-</style>
-</head>
+@media(max-width:768px){
+body{overflow-x:hidden}
+.container{padding:0 18px!important}
+.section-pad{padding:56px 0!important}
+.nav-links,.nav-cta{display:none}
+.hamburger{display:flex}
+div[style*="grid-template-columns:1fr 1fr"]{grid-template-columns:1fr!important;gap:32px!important}
+div[style*="grid-template-columns:1.2fr 1fr"]{grid-template-columns:1fr!important;gap:32px!important}
+div[style*="grid-template-columns:2fr 1fr"]{grid-template-columns:1fr!important;gap:32px!important}
+div[style*="grid-template-columns:1fr 1.5fr"]{grid-template-columns:1fr!important;gap:32px!important}
+div[style*="grid-template-columns:1fr 2fr"]{grid-template-columns:1fr!important;gap:32px!important}
+div[style*="grid-template-columns:repeat(4,1fr)"]{grid-template-columns:1fr 1fr!important;gap:2px!important}
+div[style*="grid-template-columns:repeat(3,1fr)"]{grid-template-columns:1fr!important;gap:16px!important}
+div[style*="padding-top:44px"][style*="repeat(3,1fr)"]{grid-template-columns:repeat(3,1fr)!important;gap:8px!important}
+div[style*="padding:140px 32px"]{padding:100px 18px 56px!important}
+.hero-visual{display:none!important}
+.card-grid-2,.card-grid-3{grid-template-columns:1fr!important}
+.diff-grid{grid-template-columns:1fr!important}
+.steps-grid{grid-template-columns:1fr!important}
+.form-row{grid-template-columns:1fr!important}
+.footer-top{grid-template-columns:1fr 1fr!important}
+.footer-bottom{flex-direction:column;text-align:center}
+.form-box{padding:24px 18px!important}
+.page-hero-content{padding:100px 18px 56px!important}
+.odin-card{padding:24px!important}
+.section-title{font-size:clamp(1.6rem,6vw,2.4rem)!important}
+.page-hero-title{font-size:clamp(2rem,8vw,3rem)!important}
+.section-subtitle{font-size:.93rem!important}
+}</style>
+<style>
+@media(max-width:768px){
+div[style*="grid-template-columns:1fr 1.2fr"]{grid-template-columns:1fr!important;gap:32px!important}
+div[style*="grid-template-columns:repeat(2,1fr)"]{grid-template-columns:1fr!important;gap:16px!important}
+div[style*="grid-template-columns:2fr 1fr 1fr 1fr"]{grid-template-columns:1fr 1fr!important;gap:16px!important}
+}
+</style></head>
 <body>
 <div class="mobile-menu" id="mobileMenu">
   <button class="mobile-close" onclick="closeMobileMenu()">&#x2715;</button>
