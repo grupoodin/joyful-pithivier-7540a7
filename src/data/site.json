@@ -1,0 +1,17 @@
+{
+  "name": "Grupo Odin",
+  "legalTagline": "Consultoria Empresarial",
+  "url": "https://grupoodin.com.br",
+  "email": "contato@grupoodin.com.br",
+  "instagram": {
+    "handle": "@grupo.odin",
+    "url": "https://www.instagram.com/grupo.odin/"
+  },
+  "whatsapp": {
+    "number": "5511940678537",
+    "display": "(11) 94067-8537"
+  },
+  "portalUrl": "https://app.grupoodin.com.br",
+  "formEndpoint": "https://formspree.io/f/xgobpqnn",
+  "year": 2026
+}

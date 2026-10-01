@@ -1,0 +1,44 @@
+<header class="site-header" data-header>
+  <div class="container site-header__bar">
+    <a class="brand" href="index.html" aria-label="Grupo Odin — Consultoria Empresarial, página inicial">
+      <svg class="brand__logo" viewBox="0 0 1270 203" aria-hidden="true"><use href="#odin-logo"/></svg>
+    </a>
+
+    <nav class="nav" aria-label="Principal">
+      <ul>
+        <li><a href="index.html" {{cur.inicio}}>Início</a></li>
+        <li><a href="sobre.html" {{cur.sobre}}>Sobre</a></li>
+        <li><a href="servicos.html" {{cur.servicos}}>Serviços</a></li>
+        <li><a href="metodo-odin.html" {{cur.metodo}}>Método Odin</a></li>
+        <li><a href="contato.html" {{cur.contato}}>Contato</a></li>
+      </ul>
+    </nav>
+
+    <div class="site-header__actions">
+      <a class="btn btn--primary btn--sm site-header__cta" href="contato.html#conversa">
+        <span>Vamos conversar</span>
+        <svg class="btn__icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-mobile" aria-label="Abrir menu">
+        <span class="menu-toggle__bar"></span><span class="menu-toggle__bar"></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="menu-mobile" id="menu-mobile" hidden>
+    <div class="menu-mobile__inner container">
+      <p class="eyebrow eyebrow--light">Navegação</p>
+      <ol class="menu-mobile__list">
+        <li><a href="index.html" {{cur.inicio}}><span>01</span>Início</a></li>
+        <li><a href="sobre.html" {{cur.sobre}}><span>02</span>Sobre</a></li>
+        <li><a href="servicos.html" {{cur.servicos}}><span>03</span>Serviços</a></li>
+        <li><a href="metodo-odin.html" {{cur.metodo}}><span>04</span>Método Odin</a></li>
+        <li><a href="contato.html" {{cur.contato}}><span>05</span>Contato</a></li>
+      </ol>
+      <div class="menu-mobile__foot">
+        <a class="btn btn--primary" href="contato.html#conversa"><span>Estruture antes de escalar</span><svg class="btn__icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <p><a href="mailto:{{site.email}}">{{site.email}}</a><br><a href="{{site.instagram.url}}" target="_blank" rel="noopener">{{site.instagram.handle}}</a></p>
+      </div>
+    </div>
+  </div>
+</header>

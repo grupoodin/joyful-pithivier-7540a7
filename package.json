@@ -1,0 +1,11 @@
+{
+  "name": "grupo-odin-site",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Site institucional do Grupo Odin — Consultoria Empresarial",
+  "scripts": {
+    "build": "node src/build.mjs",
+    "dev": "node src/build.mjs --watch & node server.js",
+    "start": "node server.js"
+  }
+}
