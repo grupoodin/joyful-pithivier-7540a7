@@ -95,7 +95,7 @@
       form.classList.add('is-loading');
       btn.setAttribute('aria-busy', 'true');
       try {
-        const res = await fetch(endpoint, { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify({ ...data, origem: location.href }) });
+        const res = await fetch(endpoint, { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify({ ...data, _subject: `Conversa estratégica — ${data.empresa}`, origem: location.href }) });
         if (!res.ok) throw new Error(String(res.status));
         showDone('Recebemos sua mensagem.', 'Em breve, alguém do Grupo Odin entra em contato para entender o momento da sua empresa.');
       } catch {
