@@ -15,5 +15,5 @@ npm run dev     # build em watch + servidor em http://localhost:5502
 ```
 
 ## Pendências de configuração (`src/data/site.json`)
-- `formEndpoint`: URL que recebe o POST JSON do formulário (Formspree, Netlify, API própria). Vazio = abre o e-mail pronto para `comercial@grupoodin.com.br` (nada é enviado em silêncio).
+- `formEndpoint`: URL que recebe o POST JSON do formulário (Formspree, Netlify, API própria). Vazio = abre o e-mail pronto para `contato@grupoodin.com.br` (nada é enviado em silêncio).
 - `whatsapp.number` / `display`: o material não traz número; preenchido, o canal aparece no rodapé, no contato e no formulário.
