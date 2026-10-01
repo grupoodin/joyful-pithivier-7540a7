@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{page.title}}</title>
+  <meta name="description" content="{{page.description}}">
+  <meta name="robots" content="{{page.robots}}">
+  <meta name="theme-color" content="#0f0f0f">
+  <link rel="canonical" href="{{page.canonical}}">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Grupo Odin">
+  <meta property="og:title" content="{{page.title}}">
+  <meta property="og:description" content="{{page.description}}">
+  <meta property="og:url" content="{{page.canonical}}">
+  <meta property="og:image" content="{{site.url}}/{{page.ogImage}}">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preload" href="assets/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script>document.documentElement.classList.add('js')</script>
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ProfessionalService","name":"Grupo Odin","alternateName":"Grupo Odin — Consultoria Empresarial","url":"{{site.url}}/","logo":"{{site.url}}/assets/img/logo-color.svg","image":"{{site.url}}/assets/img/og-image.png","email":"{{site.email}}","slogan":"Clareza para crescer. Estrutura para liderar.","description":"Consultoria de estruturação de negócios que integra finanças, processos, gestão e estratégia.","areaServed":"BR","knowsAbout":["Gestão financeira","Auditoria financeira gerencial","Planejamento financeiro","Estruturação empresarial","Performance empresarial"],"sameAs":["{{site.instagram.url}}"]}
+  </script>
+  {{page.schema}}
+</head>
+<body class="page-{{page.slug}}">
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+  {{> sprite}}
+  {{> header}}
+  <main id="conteudo">
+{{page.content}}
+  </main>
+  {{> footer}}
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+/* ==========================================================================
+   GRUPO ODIN — Design tokens (extraídos do IDV 2026 e da apresentação)
+   ========================================================================== */
+@font-face {
+  font-family: 'Archivo';
+  src: url('../fonts/archivo-latin.woff2') format('woff2');
+  font-weight: 100 900;
+  font-stretch: 62% 125%;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/inter-latin.woff2') format('woff2');
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+:root {
+  /* Cor — paleta oficial */
+  --orange: #fb3701;
+  --orange-deep: #d62d00;      /* hover / texto laranja sobre fundo claro (contraste AA) */
+  --peach: #ffc2b1;
+  --peach-soft: #ffe9e1;
+  --paper: #fbf7f4;
+  --white: #ffffff;
+  --graphite: #1c1c1c;
+  --ink: #0f0f0f;
+  --ink-2: #161616;
+
+  /* Tema padrão (claro). Seções sobrescrevem via .theme-* */
+  --bg: var(--paper);
+  --fg: var(--graphite);
+  --fg-muted: #5d5651;
+  --line: rgba(28, 28, 28, 0.13);
+  --line-strong: rgba(28, 28, 28, 0.28);
+  --card: var(--white);
+  --accent: var(--orange-deep);
+
+  /* Tipografia */
+  --font-display: 'Archivo', 'Arial Black', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+
+  /* Espaço e layout */
+  --gutter: clamp(20px, 4.2vw, 64px);
+  --max: 1320px;
+  --section-y: clamp(88px, 11vw, 168px);
+  --header-h: 76px;
+  --chamfer: 20px;
+
+  /* Movimento */
+  --ease: cubic-bezier(0.22, 0.8, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+/* Temas de seção */
+.theme-light { --bg: var(--paper); --fg: var(--graphite); --fg-muted: #5d5651; --line: rgba(28,28,28,.13); --line-strong: rgba(28,28,28,.28); --card: var(--white); --accent: var(--orange-deep); }
+.theme-white { --bg: var(--white); --fg: var(--graphite); --fg-muted: #5d5651; --line: rgba(28,28,28,.13); --line-strong: rgba(28,28,28,.28); --card: var(--paper); --accent: var(--orange-deep); }
+.theme-peach { --bg: var(--peach-soft); --fg: var(--graphite); --fg-muted: #5d4a43; --line: rgba(28,28,28,.14); --line-strong: rgba(28,28,28,.3); --card: #fff7f3; --accent: var(--orange-deep); }
+.theme-dark  { --bg: var(--ink); --fg: #fff; --fg-muted: rgba(255,255,255,.68); --line: rgba(255,255,255,.14); --line-strong: rgba(255,255,255,.3); --card: var(--ink-2); --accent: var(--orange); }
+.theme-orange{ --bg: var(--orange); --fg: #fff; --fg-muted: rgba(255,255,255,.86); --line: rgba(255,255,255,.28); --line-strong: rgba(255,255,255,.55); --card: rgba(255,255,255,.1); --accent: #fff; }

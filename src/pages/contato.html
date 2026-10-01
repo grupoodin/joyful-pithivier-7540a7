@@ -1,0 +1,125 @@
+---
+{"title":"Contato | Vamos estruturar o próximo passo do seu negócio — Grupo Odin","description":"Inicie uma conversa estratégica com o Grupo Odin. Conte o momento da sua empresa e vamos estruturar o próximo passo com clareza. E-mail comercial@grupoodin.com.br.","nav":"contato","slug":"contato","priority":"0.9"}
+---
+<!-- ============ HERO ============ -->
+<section class="page-hero page-hero--short theme-dark" aria-labelledby="ct-title">
+  <div class="page-hero__bg" aria-hidden="true"><div class="streak-band" style="left:64%"></div><div class="streaks"></div></div>
+  <div class="page-hero__symbol" aria-hidden="true"></div>
+  <div class="container page-hero__inner">
+    <p class="eyebrow" data-reveal="fade">Vamos conversar</p>
+    <h1 class="h1" id="ct-title" data-reveal>Vamos estruturar o <strong>próximo passo</strong> do seu negócio.</h1>
+    <p class="lead" data-reveal style="--d:.12s">Do caos à estrutura. Conte o momento da sua empresa — vamos entender o cenário e indicar, com clareza, por onde começar.</p>
+  </div>
+</section>
+
+<!-- ============ FORMULÁRIO + CANAIS ============ -->
+<section class="section theme-light has-peach-glow contact" id="conversa" aria-labelledby="form-title">
+  <div class="container contact__grid">
+    <div class="contact__form-wrap">
+      <div class="formcard chamfer chamfer--lg" data-reveal>
+        <header class="formcard__head">
+          <p class="eyebrow">Conversa estratégica</p>
+          <h2 class="h2" id="form-title">Estruture antes de <strong>escalar.</strong></h2>
+          <p class="muted">Quatro minutos para nos contar o essencial. Quanto mais claro o cenário, mais objetiva a primeira conversa.</p>
+        </header>
+
+        <form class="form" id="form-contato" novalidate data-endpoint="{{site.formEndpoint}}" data-email="{{site.email}}" data-wa="{{contact.whatsappHref}}">
+          <div class="form__row">
+            <div class="field"><label for="f-nome">Nome</label><input id="f-nome" name="nome" type="text" autocomplete="name" placeholder="Como devemos te chamar?" required><span class="field__err" aria-live="polite"></span></div>
+            <div class="field"><label for="f-empresa">Empresa</label><input id="f-empresa" name="empresa" type="text" autocomplete="organization" placeholder="Nome da empresa" required><span class="field__err" aria-live="polite"></span></div>
+          </div>
+          <div class="form__row">
+            <div class="field"><label for="f-whats">WhatsApp</label><input id="f-whats" name="whatsapp" type="tel" inputmode="tel" autocomplete="tel" placeholder="(00) 00000-0000" required><span class="field__err" aria-live="polite"></span></div>
+            <div class="field"><label for="f-email">E-mail</label><input id="f-email" name="email" type="email" autocomplete="email" placeholder="voce@empresa.com.br" required><span class="field__err" aria-live="polite"></span></div>
+          </div>
+          <div class="field">
+            <label for="f-fat">Faturamento mensal</label>
+            <div class="select"><select id="f-fat" name="faturamento" required>
+              <option value="" selected disabled>Selecione uma faixa</option>
+              <option>Até R$ 100 mil</option>
+              <option>De R$ 100 mil a R$ 300 mil</option>
+              <option>De R$ 300 mil a R$ 1 milhão</option>
+              <option>De R$ 1 milhão a R$ 5 milhões</option>
+              <option>Acima de R$ 5 milhões</option>
+              <option>Prefiro conversar sobre isso</option>
+            </select></div>
+            <span class="field__err" aria-live="polite"></span>
+          </div>
+          <div class="field">
+            <label for="f-msg">Qual é a necessidade ou o momento da empresa?</label>
+            <textarea id="f-msg" name="mensagem" rows="4" placeholder="Ex.: o faturamento cresce, mas não sei quanto sobra; quero profissionalizar a gestão; preciso organizar o financeiro…"></textarea>
+          </div>
+          <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+          <label class="check"><input type="checkbox" name="consentimento" required><span>Concordo em ser contatado pelo Grupo Odin para tratar desta solicitação.</span></label>
+          <span class="field__err field__err--check" aria-live="polite"></span>
+
+          <div class="form__actions">
+            <button class="btn btn--primary btn--lg" type="submit"><span class="btn__label">Iniciar conversa estratégica</span><svg class="btn__icon" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+            <p class="form__secure"><svg aria-hidden="true"><use href="#i-lock"/></svg>Confidencialidade total: sigilo sobre o dado mais sensível da empresa.</p>
+          </div>
+          <p class="form__status" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="form__done" hidden tabindex="-1">
+          <span class="form__done-ic"><svg aria-hidden="true"><use href="#i-check"/></svg></span>
+          <h3 class="h3" data-done-title>Recebemos sua mensagem.</h3>
+          <p class="muted" data-done-text>Em breve, alguém do Grupo Odin entra em contato para entender o momento da sua empresa.</p>
+          <div class="form__done-actions" data-done-actions></div>
+        </div>
+      </div>
+    </div>
+
+    <aside class="contact__side" aria-label="Canais oficiais e próximos passos">
+      <div class="channels" data-reveal>
+        <h3 class="eyebrow eyebrow--light">Canais oficiais</h3>
+        <a class="channel" href="mailto:{{site.email}}"><svg class="channel__icon" aria-hidden="true"><use href="#i-mail"/></svg><span class="channel__label">E-mail</span><span class="channel__value">{{site.email}}</span></a>
+        <a class="channel" href="{{site.instagram.url}}" target="_blank" rel="noopener"><svg class="channel__icon" aria-hidden="true"><use href="#i-instagram"/></svg><span class="channel__label">Instagram</span><span class="channel__value">{{site.instagram.handle}}</span></a>
+        {{contact.whatsappCard}}
+        <a class="channel channel--ghost" href="{{site.portalUrl}}" target="_blank" rel="noopener"><svg class="channel__icon" aria-hidden="true"><use href="#i-globe"/></svg><span class="channel__label">Já é cliente?</span><span class="channel__value">Acessar o Portal do Cliente</span></a>
+      </div>
+
+      <div class="next" data-reveal style="--d:.1s">
+        <h3 class="eyebrow eyebrow--light">O que acontece depois</h3>
+        <ol>
+          <li><span class="num">01</span><div><strong>Conhecimento</strong><p class="muted">Entendimento do negócio, momento e necessidades.</p></div></li>
+          <li><span class="num">02</span><div><strong>Diagnóstico</strong><p class="muted">Identificação de desafios e oportunidades.</p></div></li>
+          <li><span class="num">03</span><div><strong>Proposta</strong><p class="muted">Definição da solução, escopo e objetivos.</p></div></li>
+        </ol>
+        <p class="next__honest">Se não formos a solução certa para o seu momento, dizemos.</p>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section theme-white" aria-labelledby="faq-title">
+  <div class="container faq">
+    <div class="faq__intro">
+      <p class="eyebrow">Perguntas frequentes</p>
+      <h2 class="h2" id="faq-title" data-reveal>Antes de conversar, <strong>talvez ajude saber:</strong></h2>
+    </div>
+    <div class="faq__list" data-faq>
+      <details data-reveal><summary><span>O Grupo Odin é uma contabilidade?</span><svg aria-hidden="true"><use href="#i-plus"/></svg></summary><div><p>Somos uma consultoria de estruturação de negócios. Enquanto a contabilidade tem foco na escrita fiscal, o Grupo Odin atua na gestão: organiza o financeiro, avalia a consistência dos números, interpreta e planeja e estrutura a gestão, conectando finanças, processos, gestão e estratégia.</p></div></details>
+      <details data-reveal><summary><span>Preciso contratar todas as soluções?</span><svg aria-hidden="true"><use href="#i-plus"/></svg></summary><div><p>Não. Nem toda empresa precisa de tudo — toda empresa precisa da solução certa para o seu momento. Odin Finance, Odin Audit, Odin Planning e Método Odin® funcionam de forma independente ou complementar, conforme a realidade e a maturidade de cada negócio.</p></div></details>
+      <details data-reveal><summary><span>Como começa o trabalho?</span><svg aria-hidden="true"><use href="#i-plus"/></svg></summary><div><p>Pela conversa: entendemos o negócio, o momento e as necessidades; fazemos o diagnóstico; e só então definimos solução, escopo e objetivos. Na implantação do Odin Finance, os prazos de referência são de 3 dias (kickoff e diagnóstico), 5 dias (implantação do escopo) e 7 dias (configuração e integração), podendo variar conforme escopo, volume de informações e disponibilidade dos dados.</p></div></details>
+      <details data-reveal><summary><span>Meus dados financeiros ficam protegidos?</span><svg aria-hidden="true"><use href="#i-plus"/></svg></summary><div><p>Sim. Confidencialidade total é um dos princípios do Código Odin: sigilo sobre o dado mais sensível da empresa, garantido em contrato.</p></div></details>
+      <details data-reveal><summary><span>O Odin Audit substitui uma auditoria contábil?</span><svg aria-hidden="true"><use href="#i-plus"/></svg></summary><div><p>Não. O Odin Audit não é auditoria contábil independente nem auditoria legal. É uma análise financeira e gerencial, com foco em recuperar clareza, confiança e segurança nas informações que orientam a gestão.</p></div></details>
+      <details data-reveal><summary><span>A Odin atende redes de franquias?</span><svg aria-hidden="true"><use href="#i-plus"/></svg></summary><div><p>Sim, é um dos nossos destaques. Atuamos da franqueadora às unidades: estruturação financeira da operação central e desenvolvimento da gestão financeira dos franqueados, com padronização, acompanhamento e inteligência para toda a rede.</p></div></details>
+      <details data-reveal><summary><span>Em quanto tempo vejo resultados?</span><svg aria-hidden="true"><use href="#i-plus"/></svg></summary><div><p>Esperamos organização nas primeiras semanas, clareza nos primeiros meses e estrutura de forma contínua. São expectativas, não garantias: a evolução depende do escopo contratado, da maturidade da empresa e da execução conjunta.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"O Grupo Odin é uma contabilidade?","acceptedAnswer":{"@type":"Answer","text":"Somos uma consultoria de estruturação de negócios. Enquanto a contabilidade tem foco na escrita fiscal, o Grupo Odin atua na gestão: organiza o financeiro, avalia a consistência dos números, interpreta e planeja e estrutura a gestão, conectando finanças, processos, gestão e estratégia."}},
+{"@type":"Question","name":"Preciso contratar todas as soluções?","acceptedAnswer":{"@type":"Answer","text":"Não. Odin Finance, Odin Audit, Odin Planning e Método Odin® funcionam de forma independente ou complementar, conforme a realidade e a maturidade de cada negócio."}},
+{"@type":"Question","name":"Como começa o trabalho?","acceptedAnswer":{"@type":"Answer","text":"Pela conversa: entendemos o negócio, o momento e as necessidades; fazemos o diagnóstico; e só então definimos solução, escopo e objetivos."}},
+{"@type":"Question","name":"Meus dados financeiros ficam protegidos?","acceptedAnswer":{"@type":"Answer","text":"Sim. Confidencialidade total é um dos princípios do Código Odin: sigilo sobre o dado mais sensível da empresa, garantido em contrato."}},
+{"@type":"Question","name":"O Odin Audit substitui uma auditoria contábil?","acceptedAnswer":{"@type":"Answer","text":"Não. O Odin Audit não é auditoria contábil independente nem auditoria legal. É uma análise financeira e gerencial."}},
+{"@type":"Question","name":"A Odin atende redes de franquias?","acceptedAnswer":{"@type":"Answer","text":"Sim. Atuamos da franqueadora às unidades, com padronização, acompanhamento e inteligência financeira para toda a rede."}},
+{"@type":"Question","name":"Em quanto tempo vejo resultados?","acceptedAnswer":{"@type":"Answer","text":"Esperamos organização nas primeiras semanas, clareza nos primeiros meses e estrutura de forma contínua. São expectativas, não garantias."}}
+]}
+</script>
+

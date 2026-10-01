@@ -1,0 +1,65 @@
+<div class="odin-art" data-odin-art data-active="t">
+  <div class="odin-art__stage">
+    <svg class="odin-art__svg" viewBox="-130 -110 868 779" aria-hidden="true" focusable="false">
+      <defs>
+        <linearGradient id="oa-front" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="608" y2="559">
+          <stop offset="0" stop-color="#fff" stop-opacity=".95"/>
+          <stop offset=".55" stop-color="#ffc2b1" stop-opacity=".78"/>
+          <stop offset="1" stop-color="#fb3701" stop-opacity=".62"/>
+        </linearGradient>
+        <linearGradient id="oa-mid" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="608" y2="559">
+          <stop offset="0" stop-color="#ff6a3d" stop-opacity=".55"/>
+          <stop offset="1" stop-color="#fb3701" stop-opacity=".18"/>
+        </linearGradient>
+        <linearGradient id="oa-back" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="608" y2="559">
+          <stop offset="0" stop-color="#fb3701" stop-opacity=".3"/>
+          <stop offset="1" stop-color="#fb3701" stop-opacity=".04"/>
+        </linearGradient>
+        <linearGradient id="oa-edge" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="608" y2="559">
+          <stop offset="0" stop-color="#fff" stop-opacity=".95"/>
+          <stop offset="1" stop-color="#fff" stop-opacity=".15"/>
+        </linearGradient>
+        <filter id="oa-glow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="34"/></filter>
+        <g id="oa-bars">
+          <polygon points="125,0 478,0 601,123 125,123"/>
+          <polygon points="465,123 601,123 608,130 608,440 465,440"/>
+          <polygon points="20,440 125,440 465,440 465,559 135,559"/>
+          <polygon points="0,123 125,123 125,440 20,440 0,419"/>
+        </g>
+      </defs>
+
+      <!-- malha de precisão (estrutura / blueprint) -->
+      <g class="oa-grid" stroke="#fff" stroke-opacity=".13" stroke-width="1" fill="none">
+        <path d="M125 -90V650M465 -90V650M-110 123H720M-110 440H720" stroke-dasharray="2 7"/>
+        <path d="M-110 0H720M-110 559H720M0 -90V650M608 -90V650" stroke-opacity=".07"/>
+        <g stroke-opacity=".5"><path d="M115 123h20M125 113v20M455 123h20M465 113v20M115 440h20M125 430v20M455 440h20M465 430v20"/></g>
+      </g>
+
+      <!-- brilho -->
+      <use class="oa-halo" href="#oa-bars" fill="#fb3701" opacity=".7" filter="url(#oa-glow)" transform="translate(22 18)"/>
+
+      <!-- camadas de profundidade -->
+      <use class="oa-layer oa-layer--3" href="#oa-bars" fill="url(#oa-back)" stroke="#fb3701" stroke-opacity=".5" stroke-width="1.2" transform="translate(40 34)"/>
+      <use class="oa-layer oa-layer--2" href="#oa-bars" fill="url(#oa-mid)" stroke="#ff8a63" stroke-opacity=".6" stroke-width="1.2" transform="translate(20 17)"/>
+
+      <!-- camada frontal: quatro barras = quatro dimensões -->
+      <g class="oa-front">
+        <polygon class="oa-bar oa-bar--t" data-dim="t" points="125,0 478,0 601,123 125,123"/>
+        <polygon class="oa-bar oa-bar--r" data-dim="r" points="465,123 601,123 608,130 608,440 465,440"/>
+        <polygon class="oa-bar oa-bar--b" data-dim="b" points="20,440 125,440 465,440 465,559 135,559"/>
+        <polygon class="oa-bar oa-bar--l" data-dim="l" points="0,123 125,123 125,440 20,440 0,419"/>
+      </g>
+      <path class="oa-edge" fill="none" stroke="url(#oa-edge)" stroke-width="1.4" d="M125 0H478L608 130V440H465V559H135L0 419V123H125Z M125 123V440H465V123Z" fill-rule="evenodd"/>
+    </svg>
+  </div>
+
+  <div class="odin-art__panel">
+    <div class="odin-art__tabs" role="tablist" aria-label="As quatro dimensões da estrutura empresarial">
+      <button type="button" role="tab" class="odin-art__tab" data-dim="t" data-text="Finanças fornece as informações — a base para compreender resultados, controlar recursos e orientar decisões." aria-selected="true"><span class="num">01</span>Finanças</button>
+      <button type="button" role="tab" class="odin-art__tab" data-dim="r" data-text="Processos dão consistência — atividades se transformam em rotinas organizadas, eficientes e replicáveis." aria-selected="false"><span class="num">02</span>Processos</button>
+      <button type="button" role="tab" class="odin-art__tab" data-dim="b" data-text="Gestão dá autonomia e ritmo — o time opera com autonomia e o dono trabalha no estratégico." aria-selected="false"><span class="num">03</span>Gestão</button>
+      <button type="button" role="tab" class="odin-art__tab" data-dim="l" data-text="Estratégia direciona o crescimento — prioridades e decisões com visão de longo prazo." aria-selected="false"><span class="num">04</span>Estratégia</button>
+    </div>
+    <p class="odin-art__caption" data-caption aria-live="polite">Finanças fornece as informações — a base para compreender resultados, controlar recursos e orientar decisões.</p>
+  </div>
+</div>
